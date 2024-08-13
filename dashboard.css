@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+   }
+   
+body {
+     margin: 0;
+     padding: 0;
+     font-family: 'Raleway', sans-serif;
+     background-color: #f4f4f4;
+}
+
+#home {
+     width: 80%;
+}
+/* Navbar Styles */
+.navbar {
+     background-color: #242423;
+     /* Dark background */
+     padding: 0.5em 1em;
+}
+
+#user-profile i {
+     width: 100px;
+     height: auto;
+     color: white;
+     size: 300px;
+     font-size: 50px;
+}
+
+.navbar-brand {
+     color: #CFDBD5;
+     /* Light color for brand */
+     font-size: 1.5em;
+     font-weight: bold;
+     text-transform: uppercase;
+}
+
+.navbar-brand:hover {
+     color: #F5CB5C;
+     /* Accent color on hover */
+}
+
+.navbar-toggler {
+     border-color: #CFDBD5;
+     /* Light color for toggle button */
+}
+
+.navbar-toggler-icon {
+     background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='none' viewBox='0 0 30 30'><path stroke='%23CFDBD5' stroke-width='2' d='M5 7h20M5 15h20M5 23h20'/></svg>");
+}
+
+.offcanvas {
+     background-color: #333533;
+     /* Darker background for offcanvas */
+     color: #E8EDDF;
+     /* Light color for text */
+}
+
+.offcanvas-header {
+     border-bottom: 1px solid #CFDBD5;
+     /* Light border for header */
+}
+
+.offcanvas-title {
+     color: #F5CB5C;
+     /* Accent color for title */
+}
+
+.btn-close {
+     filter: invert(1);
+     /* Make close button white */
+}
+
+.nav-link {
+     color: #E8EDDF;
+     /* Light color for nav links */
+     font-size: 1.1em;
+}
+
+.nav-link:hover {
+     color: #F5CB5C;
+     /* Accent color on hover */
+}
+
+.nav-item {
+     margin-right: 1em;
+}
+
+#sign-out {
+     background: #09203F;
+          border: hsl(from color h s l);
+          border-radius: 20px;
+          box-shadow: #242423;
+          height: 40px;
+          width: 200px;
+}
+
+#side-bar {
+     background-color: #fff;
+     color: #fff;
+    width: 17%;
+    position: fixed;
+    top: 15%;
+    min-height: 100vh;
+     font-size: 1em;
+     text-align: left;
+     line-height: 1.5;
+
+}
+
+.side-bar ul li {
+     list-style: none;
+     font-size: 1em;
+}
+
+#user {
+     width: 120px;
+     border: none;
+     color: white;
+     background: #09203F;
+}
+
+.side-bar ul li button {
+     background: #09203F;
+          color: white;
+          border: hsl(from color h s l);
+          border-radius: 20px;
+          box-shadow: #242423;
+          height: 40px;
+          width: 160px;
+          cursor: pointer;
+          margin-top: 1rem;
+          stop-opacity: 5;
+          text-align: left;
+          display: grid;
+          grid-template-columns: auto auto;
+          column-gap:0.1rem;
+          align-items: center;
+          justify-content: center;
+}
+
+.side-bar ul {
+     display: grid;
+     grid-template-columns: auto;
+     grid-template-rows: auto auto auto auto auto auto;
+     row-gap: 0.1rem;
+}
+
+.navigation {
+     background-color: #fff;
+     color: #fff;
+     padding: 10px 0;
+     margin-top: 100px;
+     width: 100%;
+     text-align: left;
+     font-size: 1.3em;
+   }
+   
+   .navigation ul {
+     list-style: none;
+     display: flex;
+   }
+   
+   .navigation ul li {
+     margin: 0 15px;
+   }
+   
+   .navigation ul li a {
+     color: #140101;
+     text-decoration: none;
+     text-align: left;
+   }
+   
+   main {
+     display: grid;
+     grid-template-columns: auto auto;
+     column-gap: 20px;
+     row-gap: 20px;
+     padding: 10px;
+     width: 100%;
+     margin: 1rem;
+   }
+
+   #mini-dashboard {
+     position: absolute;
+     right: 40px;
+   }
+   
+   .card {
+     background-color: #fff;
+     border-radius: 10px;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     flex: 1 1 calc(33.333% - 40px);
+     padding: 20px;
+     text-align: center;
+     transition: transform 0.3s ease;
+     width: 500px;
+     height: 80vh;
+   }
+   
+   .card:hover {
+     transform: translateY(-10px);
+   }
+   
+   .card-header {
+     font-size: 1.2rem;
+     color: #333;
+     margin-bottom: 10px;
+   }
+   
+   .card-body {
+     font-size: 2rem;
+     color: green;
+   }
+
+   .card-body span {
+     color: darkred;
+   }
+
+@media (max-width: 768px) {
+     #user-profile i{
+          position: absolute;
+          right: 0;
+     }
+}
+

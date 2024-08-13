@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #242423;
+  /* Dark background */
+  padding: 0.5em 1em;
+}
+
+.navbar-brand {
+  color: #CFDBD5;
+  /* Light color for brand */
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar-brand:hover {
+  color: #F5CB5C;
+  /* Accent color on hover */
+}
+
+.navbar-toggler {
+  border-color: #CFDBD5;
+  /* Light color for toggle button */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='none' viewBox='0 0 30 30'><path stroke='%23CFDBD5' stroke-width='2' d='M5 7h20M5 15h20M5 23h20'/></svg>");
+}
+
+.offcanvas {
+  background-color: #333533;
+  /* Darker background for offcanvas */
+  color: #E8EDDF;
+  /* Light color for text */
+}
+
+.offcanvas-header {
+  border-bottom: 1px solid #CFDBD5;
+  /* Light border for header */
+}
+
+.offcanvas-title {
+  color: #F5CB5C;
+  /* Accent color for title */
+}
+
+.btn-close {
+  filter: invert(1);
+  /* Make close button white */
+}
+
+.nav-link {
+  color: #E8EDDF;
+  /* Light color for nav links */
+  font-size: 1.1em;
+}
+
+.nav-link:hover {
+  color: #F5CB5C;
+  /* Accent color on hover */
+}
+
+.nav-item {
+  margin-right: 1em;
+}
+
+#hero {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 100vh;
+}
+
+#hero h1 {
+  font-size: 1.5em;
+  position: absolute;
+  top: 10%;
+}
+
+#register {
+  background: #09203F;
+  color: white;
+  border:hsl(from color h s l);
+  border-radius: 20px;
+  box-shadow: #242423;
+  height: 40px;
+  width: 200px;
+  position: absolute;
+    top: 50%;
+}

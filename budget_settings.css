@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+     margin: 0;
+     padding: 0;
+     font-family: 'Raleway', sans-serif;
+     color: aquamarine;
+}
+
+#arrow-back {
+     background: #09203F;
+          color: white;
+          border: hsl(from color h s l);
+          border-radius: 20px;
+          box-shadow: #242423;
+          height: 40px;
+          width: 200px;
+          cursor: pointer;
+          margin-top: 3%;
+}

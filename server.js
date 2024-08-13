@@ -103,9 +103,9 @@ app.get('/logout', (req, res) => {
      });
 });
 
-app.get('/', (req, res) => {
-     res.sendFile(path.join(__dirname, './index.html'));
-});
+// app.get('/', (req, res) => {
+//      res.sendFile(path.join(__dirname, './index.html'));
+// });
 
 // Add expenses routing
 app.post('/expenses', async (req, res) => { 

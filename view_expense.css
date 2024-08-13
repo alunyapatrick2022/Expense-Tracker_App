@@ -1,0 +1,92 @@
+table {
+     width: 100%;
+     border-collapse: collapse;
+   }
+   th, td {
+     padding: 8px;
+     text-align: left;
+     border: 1px solid #ddd;
+   }
+   th {
+     background-color: #f4f4f4;
+   }
+
+#arrow-back,
+#edit,
+#delete {
+     background: #09203F;
+     color: white;
+     border: hsl(from color h s l);
+     border-radius: 20px;
+     box-shadow: #242423;
+     height: 40px;
+     width: 130px;
+     cursor: pointer;
+     margin-top: 3%;
+}
+
+#add{
+     background: #09203F;
+          color: white;
+          border: hsl(from color h s l);
+          border-radius: 20px;
+          box-shadow: #242423;
+          height: 40px;
+          width: 200px;
+          cursor: pointer;
+          margin: 3%;
+          position: absolute;
+          right: 40%;
+}
+
+#download {
+     background: #09203F;
+     color: white;
+     border: hsl(from color h s l);
+     border-radius: 20px;
+     box-shadow: #242423;
+     height: 40px;
+     width: 200px;
+     cursor: pointer;
+     margin: 3%;
+     position: absolute;
+     right: 20%;
+}
+
+/* body {
+     font-family: Arial, sans-serif;
+     margin: 20px;
+}
+
+table {
+     width: 100%;
+     border-collapse: collapse;
+}
+
+th,
+td {
+     padding: 12px;
+     border: 1px solid #ddd;
+     text-align: left;
+     width: 1005;
+}
+
+th {
+     background-color: #09203F;
+     color: white;
+     width: 10%;
+}
+
+tr:nth-child(even) {
+     background-color: #f9f9f9;
+}
+
+tr:hover {
+     background-color: grey;
+}
+
+.thead h2 {
+     text-align: center;
+     text-decoration: underline;
+     font-weight: bold;
+} */
