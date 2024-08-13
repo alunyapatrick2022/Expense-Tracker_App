@@ -49,7 +49,7 @@ db.connect((err) => {
 });
 
 // Users registration route
-app.post('/api/register', async (req, res) => {
+app.post('/register', async (req, res) => {
      try {
           const users = `SELECT * FROM users WHERE email = ?`;
           // Check if user exists
@@ -75,7 +75,7 @@ app.post('/api/register', async (req, res) => {
 });
 
 // User login route
-app.post('/api/login', async (req, res) => {
+app.post('/login', async (req, res) => {
      try {
           const users = `SELECT * FROM users WHERE email = ?`;
           db.query(users, [req.body.email], (err, data) => { 
@@ -94,7 +94,7 @@ app.post('/api/login', async (req, res) => {
 });
 
 // Logout Route
-app.get('/api/logout', (req, res) => {
+app.get('/logout', (req, res) => {
      req.session.destroy((err) => {
        if (err) {
          return res.status(500).send('Failed to log out');
@@ -108,7 +108,7 @@ app.get('/', (req, res) => {
 });
 
 // Add expenses routing
-app.post('/api/expenses', async (req, res) => { 
+app.post('/expenses', async (req, res) => { 
      try {
           const { email, category_id, amount, expense_date, description, created_at, updated_at } = req.body;
           
@@ -141,7 +141,7 @@ app.post('/api/expenses', async (req, res) => {
 });
 
 // Password reset route
-app.put('/api/reset', async (req, res) => {
+app.put('/reset', async (req, res) => {
     try {
         const users = `SELECT * FROM users WHERE email = ?`;
         db.query(users, [req.body.email], (err, data) => {
@@ -165,7 +165,7 @@ app.put('/api/reset', async (req, res) => {
 });
 
 // Dashboard route
-app.get('/api/dashboard', (req, res) => {
+app.get('/dashboard', (req, res) => {
   if (req.isAuthenticated()) {
     res.json({ message: `Welcome to your dashboard, ${req.user.username}` });
   } else {
@@ -220,7 +220,7 @@ app.get('/download-pdf', (req, res) => {
 
 //View Expenses routinne
 // Define the route handler for GET requests to /api/view_expenses
-app.get('/api/view_expenses', async (req, res) => {
+app.get('/view_expenses', async (req, res) => {
      try {
        // Query the database using await
        const [rows] = await db.promise().query('SELECT * FROM expenses');
@@ -240,6 +240,6 @@ app.get('/api/view_expenses', async (req, res) => {
      }
    });
    
-app.listen(8172, () => {
-     console.log("Server is running on http://localhost:8172");
+app.listen(3000, () => {
+     console.log("Server is running on https://expense-tracker-backend-api-endpoints.netlify.app");
 });
