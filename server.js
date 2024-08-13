@@ -103,6 +103,10 @@ app.get('/api/logout', (req, res) => {
      });
 });
 
+app.get('/', (req, res) => {
+     res.send('Hello :)');
+});
+
 // Add expenses routing
 app.post('/api/expenses', async (req, res) => { 
      try {
