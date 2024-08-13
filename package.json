@@ -1,0 +1,45 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Week 6 integration of frontend and backend",
+  "main": "server.js",
+  "scripts": {
+    "test": "",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Powerlearnproject/week-6-integration-of-frontend-and-backend-alunyapatrick2022.git"
+  },
+  "keywords": [
+    "Budgets",
+    "Expenses",
+    "Dashboard",
+    "register",
+    "login"
+  ],
+  "author": "alunyapatrick2022",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Powerlearnproject/week-6-integration-of-frontend-and-backend-alunyapatrick2022/issues"
+  },
+  "homepage": "https://github.com/Powerlearnproject/week-6-integration-of-frontend-and-backend-alunyapatrick2022#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "express-validator": "^7.1.0",
+    "fs": "^0.0.1-security",
+    "mysql2": "^3.11.0",
+    "nodemon": "^3.1.4",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "pdfkit": "^0.15.0"
+  }
+}
