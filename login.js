@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('form');
     const authMsg = document.getElementById('auth-msg');
+    const apiUrl = window.API_URL || 'http://localhost:3000'; // Make sure to set a default value or handle undefined
 
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -9,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const password = document.getElementById('password').value;
 
         try {
-            const response = await fetch('https://expense-tracker-backend-api-endpoints.netlify.app/login', {
+            const response = await fetch(`${apiUrl}/login`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -18,24 +19,23 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             if (response.ok) {
-                // If login is successful, redirect to the dashboard
-                alert('Bravo, Login request was successful!')
-                window.location.replace('./dashboard.html'); // Change to your dashboard URL
+                alert('Bravo, Login request was successful!');
+                window.location.replace('./dashboard.html'); // Ensure this path is correct
             } else {
-                // If login fails, display an error message
                 const errorData = await response.json();
                 authMsg.textContent = errorData.message || "Login failed. Please check your credentials.";
             }
         } catch (err) {
             authMsg.textContent = 'An error occurred. Please try again later.';
+            console.error('Login error:', err); // Log error for debugging
         }
     });
+
+    const a = document.getElementById('dashboard');
+
+    if (a) {
+        a.addEventListener('click', () => {
+            a.href = './login.html'; // Ensure this path is correct
+        });
+    }
 });
-
-const a = document.getElementById('dashboard');
-
-function handleDashboard() {
-    a.href = './login.html';
-}
-
-a.onclick = handleDashboard;

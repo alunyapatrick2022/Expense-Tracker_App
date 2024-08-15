@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('form')
+    const form = document.getElementById('form');
+    const apiUrl = window.API_URL || 'https://expense-tracker-backend-api-endpoints.netlify.app:3000';
     
 
     form.addEventListener('submit', async (e) => {
@@ -12,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         try{
-            const response = await fetch('https://expense-tracker-backend-api-endpoints.netlify.app/register', {
+            const response = await fetch(`${apiUrl}/register`, {
                 method: 'POST',
                 headers:  {
                     'Content-Type': 'application/json'

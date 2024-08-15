@@ -225,7 +225,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "npm test",
-    "start": "node server.js"
+  "start": "nodemon server.js",
+     "build": "netlify build"
   },
   "repository": {
     "type": "git",
