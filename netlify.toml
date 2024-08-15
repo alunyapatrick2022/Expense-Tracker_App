@@ -1,2 +1,10 @@
 [build]
   command = "npm run build"
+  publish = "public" # directory where the built files are located
+
+[dev]
+  command = "npm run start" # command to run your dev server locally
+  targetPort = 3000 # port your dev server runs on
+
+[build.environment]
+  NODE_ENV = "production"
