@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const tableBody = document.querySelector('#expenses-table tbody');
-  const apiUrl = window.API_URL || 'https://expense-tracker-backend-api-endpoints.netlify.app';
+  // const apiUrl = window.API_URL || 'https://expense-tracker-backend-api-endpoints.netlify.app';
 
   // Function to fetch data from the API and populate the table
   async function fetchExpenses() {
