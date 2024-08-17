@@ -1,0 +1,36 @@
+functionsDirectory = "D:\\XAMPP\\htdocs\\Expense-Tracker_App\\netlify\\functions"
+functionsDirectoryOrigin = "config-v1"
+headersOrigin = "config"
+redirectsOrigin = "config"
+plugins = []
+headers = []
+redirects = []
+
+[build]
+publish = "D:\\XAMPP\\htdocs\\Expense-Tracker_App"
+publishOrigin = "config"
+commandOrigin = "config"
+command = "npm run build"
+functions = "D:\\XAMPP\\htdocs\\Expense-Tracker_App\\netlify\\functions"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
+
+[dev]
+command = "npm run start"
+targetPort = 3000.0
+
+[functions]
+
+[functions."*"]

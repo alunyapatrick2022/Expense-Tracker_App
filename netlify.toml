@@ -1,7 +1,17 @@
+#[build]
+ # command = "npm install && npm start"
+ # publish = "frontends"
+
+#[[redirects]]
+#  from = "/*"
+ # to = "/"
+ # status = 200
+
 [build]
   command = "npm run build"
-  publish = "public" # directory where the built files are located
+  publish = "frontends"
 
-[dev]
-  command = "npm run start" # command to run your dev server locally
-  targetPort = 3000 # port your dev server runs on
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200

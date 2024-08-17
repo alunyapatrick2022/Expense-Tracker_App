@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="Update Expenses">
+     <meta name="Patrick Alunya" content="Patrick Alunya">
+     <title>Update Expenses</title>
+     <link rel="stylesheet" type="text/css" href="./edit_expense.css" />
+</head>
+<body id="background">
+     <nav>
+          <button id="arrow-back" onclick="handleBack()">
+               <i class="fa-solid fa-arrow-left"></i>
+               Back
+          </button>
+     </nav>
+     <div class="container-edit">
+          <div class="update-header">
+               <h1>Update Expenses</h1>
+          </div>
+          <div class="expenses-card">
+              <form action="/api/edit_expenses"  id="update-form">
+               <div class="selection-form">
+                    <div class="expenses-type">
+                         <h2>Expenses</h2>
+                         <select name="expenses">
+                              <option value=""></option>
+                              <option value="Housing">Housing</option>
+                              <option value="Transportation">Transportation</option>
+                              <option value="Food">Food</option>
+                              <option value="Utilities">Utilities</option>
+                              <option value="Health & Medical">Health & Medical</option>
+                              <option value="Insurance">Insurance</option>
+                              <option value="Debt Payments">Debt Payments</option>
+                              <option value="Entertainment">Entertainment</option>
+                              <option value="Clothing">Clothing</option>
+                              <option value="Savings and Investments">Savings and Investments</option>
+                              <option value="Education">Education</option>
+                              <option value="Clothing">Miscellaneous</option>
+                         </select>
+                         <label>Amount</label>
+                         <input type="number" name="amount" id="number" value="amount" autocomplete="off" />
+                    </div>
+                    <div class="category-type">
+                         <h2>Category</h2>
+                         <select name="category">
+                              <option value=""></option>
+                              <option value="rent">Rent</option>
+                              <option value="Property Taxes">Property Taxes</option>
+                              <option value="Car Payments">Car Payments</option>
+                              <option value="Fuel">Fuel</option>
+                              <option value="Parking Fees">Parking Fees</option>
+                              <option value="Groceries">Groceries</option>
+                              <option value="Snack and Beverages">Snacks and Beverages</option>
+                              <option value="Electricity">Electricity</option>
+                              <option value="Internet">Internet</option>
+                              <option value="Mobile Phone">Mobile Phone</option>
+                              <option value="Health Insurance">Health Insurance</option>
+                              <option value="Medications">Medications</option>
+                              <option value="Gym Membership">Mental Health services</option>
+                              <option value="Life Insurance">Life Insurance</option>
+                              <option value="Stduent Loans">Student Loans</option>
+                              <option value="Personal Loans">Personal loans</option>
+                              <option value="Hobies">Hobies</option>
+                              <option value="Books and magazines">Book and magazines</option>
+                              <option value="Movies">Movies</option>
+                              <option value="Shoes">Shoes</option>
+                              <option value="Tuition">Tuition</option>
+                              <option value="Courses">Courses</option>
+                              <option value="Gifts and Donations">Gifts and Donations</option>
+                              <option value="Personal Car">Personal Care</option>
+                              <option value="Pet Care">Pet Care</option>
+                              <option value="Subcriptions">Subcriptions</option>
+                         </select>
+                    </div><br />
+                    <div class="payment_method">
+                         <h2>Payment Method</h2>
+                         <input type="radio" name="payment_method" id="credit_card" value="credit_card" /><i class="fa-solid fa-credit-card"></i>Credit
+                              Card
+                              <input type="radio" name="payment_method" id="bank_transfer" value="bank_transfer" /><i class="fa-solid fa-landmark"></i>Bank
+                              Transfer
+                              <input type="radio" name="payment_method" id="paypal" value="paypal" /><i class="fa-brands fa-paypal"></i>Paypal
+                              <input type="radio" name="payment_method" id="cash" value="cash" /><i class="fa-solid fa-coins"></i><i class="fa-solid fa-sack-dollar"></i>Cash
+                              <input type="radio" name="payment_method" id="crypto" value="Crypto" /><i class="fa-brands fa-bitcoin"></i>Cryptocurrency
+                    </div>
+               </div><br />
+               <input type="submit" value="Edit" />
+               <input type="button" id="cancelButton" value="Cancel" />
+              </form>
+          </div>
+     </div>
+     <script src="./edit_expenses.js"></script>
+</body>
+</html>
